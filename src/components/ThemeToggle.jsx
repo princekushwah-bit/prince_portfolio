@@ -1,3 +1,5 @@
+
+
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -11,7 +13,7 @@ export const ThemeToggle = () => {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     } else {
-      localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
   }, []);
@@ -32,8 +34,10 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        // DESKTOP: top-5, right-5 (Pehle jaisa chota padding p-2)
+        // MOBILE: right-16 (Menu 3 lines ke just side mein lane ke liye)
+        "fixed top-5 right-16 md:right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "focus:outline-none"
       )}
     >
       {isDarkMode ? (

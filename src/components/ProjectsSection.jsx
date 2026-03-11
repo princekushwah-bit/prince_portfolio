@@ -15,11 +15,11 @@ const projects = [
     id: 2,
     title: "DoCart E-commerce Platform",
     description:
-      "A full-stack e-commerce app with a focus on performance and user experience.",
-    image: "/projects/Screenshot 2026-03-09 165728.png", 
+      "A high-performance Full-Stack E-Commerce platform featuring a Voice Assistant, an AI Chatbot, and a data-driven Admin Panel for seamless management.",
+    image: "/projects/Screenshot 2026-03-11 153551.png", 
     tags: ["React.js", "Node.js", "MongoDB", "Tailwind"],
-    demoUrl: "https://doshopai-frontend-one.onrender.com/",
-    githubUrl: "https://github.com/princekushwah-bit/DoCart",
+    demoUrl: "https://do-cart-e-commerce.vercel.app/",
+    githubUrl: "https://github.com/princekushwah-bit/DoCart-E-Commerce",
   },
   {
     id: 3,
